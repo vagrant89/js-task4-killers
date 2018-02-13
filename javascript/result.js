@@ -15,7 +15,7 @@ window.onload=function(){
   var Participants=sessionStorage.sequence.split(",")
 
   ltHeader.onclick=function(){
-    window.location.href="gameStart.html"
+    window.location.href="index.html"
   }
 // 游戏结果标题
   if (sessionStorage.winner==1) {
@@ -28,7 +28,7 @@ window.onload=function(){
 //剩余人数
  var a=0;
  var b=0;
- alert(newParticipants)
+ // alert(newParticipants)
  for (var i = 0; i < newParticipants.length; i++) {
    if (newParticipants[i]==0) {
      a=a+1;
@@ -39,7 +39,7 @@ window.onload=function(){
  killerLeft.innerHTML="杀手"+b+"人"
  civilianLeft.innerHTML="平民"+a+"人"
 //流程
-alert(Math.ceil(turnCount/2))
+// alert(Math.ceil(turnCount/2))
   for (var i = 1; i < Math.ceil(turnCount/2)+1; i++) {
     var c=Number(getKilled[(i-1)*2+1]);
     var d;
