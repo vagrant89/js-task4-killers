@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>simpleMode</title>
+    <meta name="viewport" content="width=device-width maximum-scale=1.0">
+    <link rel="stylesheet" href="css/simpleModeStyle.min.css">
+    <script type="text/javascript" src="javascript/simpleMode.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="index.html"><span class="floatLeft previous"></span></a>
+        <span>参数设置</span>
+        <a href="#"><span class="floatRight assist"></span></a>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="title">
+          玩家配比
+        </div>
+        <div class="gamerDisplay">
+          <span class="killer">杀手<em id="killer">0</em>人</span>
+          <span class="human">平民<em id="human">0</em>人</span>
+        </div>
+        <div class="gameSetting">
+          <span>水民词汇 ：<input id="mainWard" type="text" maxlength="10" name="" placeholder="限制输入10个字内" value=""></span>
+          <span>幽灵词汇 ：<input id="fakeWard" type="text" maxlength="10" name="" placeholder="限制输入10个字内" value=""></span>
+        </div>
+        <div class="gamerSetting">
+          <span>请输入玩家数量 <input id="quantity" min="4" max="18" type="number" name="" value="" size="1px"></span>
+          <span class="organe">玩家数量为4-18</span>
+        </div>
+        <a href="simpleMode_kills.html">
+          <div class="startGame">
+          去发牌
+          </div>
+        </a>
+      </div>
+    </main>
+    <button type="button" name="button" onclick="read()">随机产生的身份信息，1代表杀手,0是平民</button>
+  </body>
+</html>

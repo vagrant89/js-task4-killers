@@ -1,0 +1,439 @@
+$backgroundGrey:#f0f0f0;
+$backgroundBlue:#29bde0;
+.grey{
+  color: #aaaaaa;
+}
+.organe{
+  color: #fcca72;
+}
+.white{
+  color: white;
+}
+a{
+  text-decoration: none;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: $backgroundGrey;
+  min-width: 320px;
+}
+header{
+  background-color: $backgroundBlue;
+  height: 4rem;
+}
+.displayBtn{
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  background: url("../images/index_03.png") no-repeat;
+  background-size: 2rem;
+  cursor: pointer;
+}
+.topbtn{
+  margin: 1.7rem 0 0 1rem;
+}
+.sidebar{
+  width: 150px;
+  background-color: white;
+  ul,li{
+    list-style:  none;
+    color: $backgroundBlue;
+    padding: 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 533px) {
+  .sidebar{
+    width: 100%;
+  }
+  .content{
+    float: left;
+    width: 100%;
+  }
+}
+.hidden{
+  display: none;
+}
+.content{
+  overflow: hidden;
+}
+.floatRight{
+  float: right;
+}
+.floatLeft{
+    float: left;
+}
+.lastgame{
+  border: 1px solid #e8e8e8;
+  height: 3rem;
+  background-color: white;
+  width: 80%;
+  margin: 1rem 10% 1rem 10%;
+  text-align: center;
+  vertical-align: middle;
+  display: table;
+  .text{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+  .next{
+    width: 2rem;
+    height: 2rem;
+    display: table-cell;
+    background: url("../images/index_07.png") no-repeat center;
+    background-size: 1rem;
+  }
+}
+.gameselect{
+  background-color: white;
+  width: 80%;
+  margin: 1rem 10% 1rem 10%;
+  .game{
+    display: table;
+    width: 100%;
+    line-height: 3rem;
+    border-bottom: 1px solid #fccf86;
+    font-size: 1.5rem;
+  }
+  .text{
+    text-align: center;
+  }
+  .mode{
+    background-color: #69d1e9;
+  }
+  .players{
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .easy,
+  .guess,
+  .idiot{
+    display: table;
+    width: 80%;
+    line-height: 4.5rem;
+    margin: 1rem 10% 0 10%;
+  }
+  .pagination{
+    text-align: center;
+    .dot{
+      width: 10px;
+      height: 10px;
+      background-color: #f0f0f0;
+      /* border: 1px solid black; */
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .current{
+      background-color: #69d1e9;
+    }
+  }
+  .nextmode{
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    background: url("../images/index_11.png") no-repeat;
+    background-size: 1rem;
+    position:relative;
+    top: -13rem;
+    left: 95%;
+  }
+}
+
+.voting{
+  body{
+    background-color: $backgroundBlue;
+  }
+  .lt-header{
+    float: left;
+    width: 39px; height: 40px;
+    background-position: -82px -132px;
+    margin: 0.7rem 0 0 1rem;
+    transform: scale(0.6);
+  }
+  .rt-header{
+    float: right;
+    width: 36px; height: 36px;
+    background-position: -141px -132px;
+    margin: 0.7rem 0 0 1rem;
+    transform: scale(0.6);
+  }
+  .text-header{
+    height: 3rem;
+    line-height: 4rem;
+    color: white;
+  }
+  .banner{
+    width: 100%;
+    height: 3rem;
+    background-color: #b9e9f5;
+    margin-bottom: 0.7rem;
+  }
+  .text-banner{
+    width: 80%;
+    text-align: left;
+    position: relative;
+    top: 1rem;
+  }
+  .text-banner::after{
+    box-sizing: content-box;
+    width: 0px;
+    height: 0px;
+    position: relative;
+    top: 13px;
+    left: 15%;
+    padding:0;
+    border-bottom:9px solid transparent;
+    border-top:9px solid #b9e9f5;
+    border-left:9px solid transparent;
+    border-right:9px solid transparent;
+    display: block;
+    content:'';
+    z-index:10
+  }
+  .music{
+    margin-right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    background:url(../images/voting_11.png) no-repeat;
+    background-size: 3rem;
+    border: none;
+  }
+  .text{
+    position: relative;
+    text-align: left;
+    padding-left: 12%;
+    color: white;
+  }
+  main{
+    padding-top: 3rem;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 6rem;
+  }
+  .blocks{
+    width: 100%;
+  }
+  .block{
+    width: 20%;
+    height: 20vw;
+    margin: 0 0 8vw 10%;
+    float: left;
+  }
+  .cube{
+    /* width: 100%;
+    height: 20vw; */
+    border: 4px solid white;
+  }
+  .title{
+    height: 70%;
+    background-color: #f5c97b;
+    line-height: 14vw;
+    text-align: center;
+  }
+  .number{
+    height: 30%;
+    background-color: #83b09a;
+    line-height: 6vw;
+    text-align: center;
+  }
+
+
+  .hidden{
+    display: none;
+    /* position: relative;
+    top: 0.5rem; */
+  }
+
+  .block:hover .hidden{
+    /* display: inline-block; */
+    display: block;
+    float: left;
+    margin:3% 2.5%;
+  }
+  footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 4rem;
+    background-color: #29bde0;
+    border-top: 1px solid white;
+  }
+  .btn{
+    width: 50%;
+    height: 3rem;
+    color: white;
+    background-color: #fbb435;
+    line-height: 3rem;
+    text-align: center;
+    margin: 0.5rem 25% 0.5rem 25%;
+  }
+  a{
+    /* position:fixed;
+    bottom: 0; */
+    text-decoration: none;
+  }
+  /* a:link{
+    color: white;
+  } */
+  .audio{
+    width: 10px;
+    height: 10px;
+    display: block;
+    background-color: black;
+  }
+  span{
+    background: url("../images/css_sprites.png") no-repeat;
+  }
+
+  .hidden1{
+    width: 20%;
+    height: 4vw;
+    background: url("../images/voting_15.png") no-repeat;
+    background-size: 100%;
+  }
+  .hidden2{
+    width: 20%;
+    height: 4vw;
+    background: url("../images/voting_17.png") no-repeat;
+    background-size: 100%;
+  }
+  .hidden3{
+    width: 20%;
+    height: 4vw;
+    background: url("../images/voting_19.png") no-repeat;
+    background-size: 100%;
+  }
+  .hidden4{
+    width: 20%;
+    height: 4vw;
+    background: url("../images/voting_21.png") no-repeat;
+    background-size: 100%;
+  }
+}
+
+.resultPage{
+  body{
+    margin: 0;
+    background-color: #29bde0;
+  }
+  header{
+    width: 80%;
+    text-align: center;
+    position: fixed;
+    background-color: #29bde0;
+    border-bottom: 1px solid #42c5e4;
+    padding: 0 10%;
+    z-index: 100;
+    line-height: 4rem;
+  }
+  .lt-header{
+    width: 2rem;
+    height: 2rem;
+    margin-top: 1.5rem;
+    float: left;
+    background: url(../images/result_03.png) no-repeat;
+    background-size: 2rem;
+  }
+  .rt-header{
+    width: 2rem;
+    height: 2rem;
+    margin-top: 1.5rem;
+    float: right;
+    background: url(../images/result_05.png) no-repeat;
+    background-size: 2rem;
+  }
+  .text-header{
+    color: white;
+    margin-top: 0.5rem;
+  }
+  main{
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+  }
+  span{
+    display: block;
+  }
+  img{
+    width: 100%;
+    max-width: 200px;
+  }
+  .icon{
+    width:40%;
+    height: 25vw;
+    /* max-width: 210px; */
+    max-height: 8rem;
+    /* max-height: 136px; */
+    /* background-image: url(../images/result_10.png); */
+    background-size:100%;
+    background-repeat: no-repeat;
+    margin:0rem 30%;
+    text-align: center;
+  }
+  .result{
+    padding: 0.5rem 10%;
+  }
+  .days{
+    padding: 0.5rem 10%;
+    background-color: white;
+    margin: 0;
+    border-bottom: 1px solid #f6f6f6;
+  }
+  .day{
+    margin: 0;
+  }
+  p:not(.day){
+    margin: 0;
+    line-height: 2rem;
+    color: #bdbdbd;
+  }
+  .time{
+    position: relative;
+    top: -1rem;
+    float: right;
+    color: #dedede;
+  }
+  footer{
+    position: fixed;
+    bottom: 0;
+    height: 4rem;
+    width: 100%;
+    background-color: rgba(41, 189, 224, 0.6);
+  }
+  .again{
+    color: white;
+    background-color: #f66f6f;
+    width: 30%;
+    height: 3rem;
+    margin: 0.5rem 5% 0.5rem 15%;
+    border-radius: 5px;
+    text-align: center;
+    float: left;
+    line-height: 3rem;
+  }
+  .share{
+    color: white;
+    background-color: #fbb435;
+    width: 30%;
+    height: 3rem;
+    margin: 0.5rem 14% 0.5rem 5%;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 3rem;
+    float: right;
+  }
+  .orange{
+    color: #ffc865 !important;
+    font-weight: bold;
+  }
+  table{
+    margin-top: 1rem;
+    width: 100%;
+    color: white;
+  }
+  .justify{
+    text-align: justify;
+    text-align-last:justify;
+  }
+}

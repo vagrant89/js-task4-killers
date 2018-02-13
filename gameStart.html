@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>gameStart</title>
+    <meta name="viewport" content="width=device-width maximum-scale=1.0">
+    <link rel="stylesheet" href="css/gameStart.min.css">
+    <script type="text/javascript" src="javascript/gameStart.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="judger.html"><span class="floatLeft previous"></span></a>
+        <span>法官台本</span>
+        <a href="#"><span class="floatRight closeGame"></span></a>
+      </div>
+    </header>
+    <main>
+      <div class="dayflow" id="dayflow">
+        <div class="time" id="time" style="display:none;">
+          <span>第一天</span>
+        </div>
+      </div>
+      <div class="content">
+        <span class="pointTop"></span>
+        <div class="sideBar">
+          <span class="night"></span>
+          <span class="day"></span>
+        </div>
+        <div class="progress">
+          <a class="killersTerm" id="killersTerm">
+            <span class="pointLeft" id="pointLeft1"></span>
+            <span>杀手杀人</span>
+          </a>
+          <a class="yiYan" id="yiYan">
+            <span class="pointLeft" id="pointLeft2"></span>
+            <span>亡灵发表遗言</span>
+          </a>
+          <a class="faYan" id="faYan">
+            <span class="pointLeft" id="pointLeft3"></span>
+            <span>玩家依次发言</span>
+          </a>
+          <a class="vote" id="vote">
+            <span class="pointLeft" id="pointLeft4"></span>
+            <span>玩家投票</span>
+          </a>
+        </div>
+      </div>
+      <div class="buttons">
+        <a class="endGame" id="endGame">
+          <span>结束游戏</span>
+        </a>
+        <a class="judgersNote" id="judgersNote">
+          <span>法官日志</span>
+        </a>
+      </div>
+    </main>
+    <button type="button" name="button" onclick="read()">随机产生的身份信息，1代表杀手,0是平民</button>
+  </body>
+</html>

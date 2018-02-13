@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>simpleMode</title>
+    <meta name="viewport" content="width=device-width maximum-scale=1.0">
+    <link rel="stylesheet" href="css/kill.min.css">
+    <script type="text/javascript" src="javascript/simpleMode_kill.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="simpleMode.html"><span class="floatLeft previous"></span></a>
+        <span>查看身份</span>
+        <a href="#"><span class="floatRight closeGame"></span></a>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <span class="order" id="order">1</span>
+        <img id="displayImage" src="images/kill_cover_03.png" alt="">
+        <span class="occupation" id="occupation" style="visibility:hidden">111</span>
+        <br>
+        <button class="showOccupation" id="showOccupation" type="button" name="button">查看1号身份</button>
+      </div>
+      <button type="button" name="button" onclick="read()">随机产生的身份信息，1代表杀手,0是平民</button>
+    </main>
+
+  </body>
+</html>

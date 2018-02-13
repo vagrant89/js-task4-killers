@@ -1,0 +1,57 @@
+@import "simpleModeStyle.scss";
+
+html{
+  max-width: 640px;
+  margin: auto;
+}
+header{
+  .closeGame{
+    @extend .previous;
+    background: url('../images/voting_06.png') no-repeat right;
+    background-size: 1.5rem;
+  }
+}
+main{
+  background-color: $backgroundBlue;
+  .container{
+    margin: 0;
+  }
+  .order{
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    color: red;
+    background-color: white;
+    border: 2px solid #ffedc5;
+    border-radius: 50%;
+    position: relative;
+    top: 1.5rem;
+    margin: auto;
+  }
+  img{
+    width: 90%;
+    margin: auto;
+  }
+}
+.showOccupation{
+  width: 100%;
+  margin: auto;
+  background-color: #fbb435;
+  color: white;
+  font-size: 2rem;
+  line-height: 3rem;
+  border: none;
+  position: relative;
+  // bottom: 5rem;
+}
+.occupation{
+  display: block;
+  width: 100%;
+  color: blue;
+  font-size: 2rem;
+  text-align: center;
+  position: relative;
+  bottom: 15rem;
+}
